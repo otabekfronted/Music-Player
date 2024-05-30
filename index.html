@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Music Player</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="music-player">
+            <audio
+                id="audio"
+                src="./sounds//Eminem - Mockingbird.mp3"
+                src="./sounds/Imagine Dragons - Believer.mp3"
+                src="./sounds/Imagine Dragons - Bones.mp3"
+                src="./sounds/Imagine Dragons - Natural.mp3"
+            ></audio>
+            <div class="controls">
+                <button id="play-pause">Play</button>
+                <button id="stop">Stop</button>
+                <button id="volume-up">Vol +</button>
+                <button id="volume-down">Vol -</button>
+            </div>
+            <div class="progress">
+                <input type="range" id="progress-bar" value="0" max="100" />
+            </div>
+            <div class="time">
+                <span id="current-time">0:00</span> /
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
